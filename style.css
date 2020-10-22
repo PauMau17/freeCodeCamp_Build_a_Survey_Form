@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    family-font: italic;
+}
+
+#survey-form {
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: silver;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+input {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    font-size: 18px;
+    font-style: italic;
+    padding: 10px;
+    margin: 10px;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.secciones {
+    border: 3px solid gold;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+#submit {
+    border-radius: 20px;
+    font-size: 30px;
+    padding: 10px;
+}

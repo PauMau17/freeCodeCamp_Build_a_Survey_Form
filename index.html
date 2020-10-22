@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Build a Survey Form</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!--css link bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<!--COMIENZA EL BODY-->
+
+<body>
+
+    <h1 id="title">Formulario de Encuesta</h1>
+    <p id="description">Un formulario de prueba</p>
+
+
+    <form id="survey-form" class="secciones">
+        <label id="name-label" for="name">Nombre</label>
+        <input id="name" placeholder="nombre" type="text" value="name" required>
+        <label id="email-label" for="email">Email</label>
+        <input id="email" placeholder="email" type="email" value="email" required>
+        <label id="number-label" for="number">Numero</label>
+        <input id="number" placeholder="Numero" type="number" min="0" max="9" value="number" required>
+
+        <div id="dropdown" class="form-group secciones">
+            <label id="sel1-label" for="sel1">Elige una fruta</label>
+            <select class="form-control" id="sel1">
+        <option>Manzana</option>
+        <option>Kiwi</option>
+        <option>Platano</option>
+        <option>Frutilla</option>
+      </select>
+        </div>
+
+        <div id="seleccione_radio" class="secciones">
+            <h4>Saludo</h4>
+            <fieldset id="seleccione_saludo">
+                <input type="radio" name="seleccione_saludo" value="hola">hola
+                <input type="radio" name="seleccione_saludo" value="buenas_tardes">buenas tardes
+                <input type="radio" name="seleccione_saludo" value="buenas_noches">buenas noches
+                <input type="radio" name="seleccione_saludo" value="chau">chau
+            </fieldset>
+        </div>
+
+        <div id="seleccione_checkbox" class="secciones">
+            <h4>Jornada</h4>
+            <fieldset id="seleccione_jornada">
+                <input type="checkbox" name="seleccione_jornada" value="dia">dia
+                <input type="checkbox" name="seleccione_jornada" value="tarde">tarde
+                <input type="checkbox" name="seleccione_jornada" value="noche">noche
+            </fieldset>
+        </div>
+
+        <div id="comentarios" class="secciones">
+            <h4>envianos tus comentarios</h4>
+            <textarea type="textarea" placeholder="Envia tus comentarios...">
+      </textarea>
+
+        </div>
+
+        <button id="submit" type="submit" name="submit">Enviar</button>
+    </form>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+
+</html>
